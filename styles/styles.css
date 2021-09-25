@@ -1,0 +1,415 @@
+/* DAMOS PROPIEDADES AL BODY DE LA PÁGINA */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  width: 99.35%;
+}
+
+/* ----------------------------------  
+   HEADER DEL HEADER
+   ---------------------------------- */
+
+.navbar.headerDelHeader {
+  background-color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  padding: 0px;
+  justify-content: flex-end;
+}
+
+.nav-link.headerDelHeader {
+  color: black;
+  font-size: 15px;
+  padding-bottom: 0px;
+}
+
+.nav-link.headerDelHeader:hover {
+  color: #8b1d1d;
+}
+
+/* ----------------------------------  
+IMAGEN DE HEADER
+   ---------------------------------- */
+
+.headerLogo {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+/* ----------------------------------  
+   BARRA DE NAVEGACIÓN (NAVBAR)
+   ---------------------------------- */
+
+/* LE DAMOS UN COLOR AL FONDO DEL NAVBAR Y REINICIAMOS PADDING */
+.navbar {
+  padding: 0px;
+  background-color: rgb(197, 197, 197);
+}
+
+/* JUSTIFICAMOS LOS ELEMENTOS DEL NAVBAR (BOTONES DE NAVEGACIÓN MUJER, HOMBRE, NIÑO, OFERTAS)
+   EN TODO EL CENTRO DEL CONTENEDOR DEL NAVBAR */
+.navbar-nav {
+  justify-content: center;
+}
+
+/* LE DAMOS AL CONTENEDOR DEL NAVBAR UN PADDING ESPECÍFICO */
+.container-fluid.navbarContainer {
+  padding: 0px 10%;
+}
+
+/* SEGÚN CIERTO TAMAÑO, EL PADDING DEL NAVBAR TENDRÁ CIERTO TAMAÑO */
+@media (max-width: 991px) {
+  .container-fluid.navbarContainer {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+/* LE DAMOS UN COLOR DE BACKGROUND AL NAVBAR */
+.row.nav-row {
+  background-color: rgb(197, 197, 197);
+  align-items: center;
+}
+
+.row .col {
+  background-color: inherit;
+}
+
+/* LE DAMOS ESTILOS A LOS BOTONES DEL NAVBAR. ESTO ANTES SE LLAMABA: product-intro2 */
+.navbarCategorias {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  align-items: center;
+}
+
+.nav-link {
+  color: black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.nav-link:hover {
+  color: #8b1d1d;
+}
+
+.nav-link.ofertas {
+  color: #8b1d1d;
+}
+
+.nav-link.ofertas:hover {
+  color: rgb(225, 0, 0);
+}
+
+.form-control {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+}
+
+.form-control::placeholder {
+}
+
+/* ----------------------------------  
+   ÍCONOS DE GOOGLE (GOOGLE FONTS)
+   ---------------------------------- */
+.material-icons {
+  color: black;
+  padding: 6px;
+  font-size: 22px;
+}
+
+/* ----------------------------------  
+   CONTENEDORES DE CARTAS CON MUJER, HOMBRE Y MUJER
+   ---------------------------------- */
+
+.contenedor-text {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  padding-top: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.contenedor-text-style {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 100 pt;
+}
+
+.contenedor-imagenes {
+  width: 100%;
+  height: 560px;
+  background-color: #ffffff;
+  padding-top: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-imagenes-style {
+  width: 365px;
+  height: 531px;
+  position: relative;
+  z-index: 2;
+}
+
+.fondo-atras-imagenes {
+  width: 365px;
+  height: 531px;
+  background-color: #ffffff;
+  position: relative;
+  left: -10px;
+  top: -541px;
+  z-index: 1;
+}
+
+.contenedor-imagenes-aux {
+  width: 345px;
+  height: 511px;
+  border: 0px solid #000000;
+  position: relative;
+  left: 10px;
+  top: -1052px;
+  z-index: 8;
+}
+
+.contenedor-imagenes-aux:hover ~ .borde-imagen {
+  transition: all ease-in-out 0.2s;
+  background-color: #61171493;
+  border: 0px solid #61171493;
+}
+
+.borde-imagen {
+  width: 345px;
+  height: 511px;
+  border: 2.5px solid #ffffff;
+  position: relative;
+  left: 10px;
+  top: -1562px;
+  z-index: 6;
+}
+
+.cuadro-texto {
+  width: 324px;
+  height: 106px;
+  border-radius: 25px 0px 0px 25px;
+  background-color: #292b2b00;
+  position: relative;
+  left: 50px;
+  top: -1765px;
+  z-index: 3;
+}
+
+.texto-imagen {
+  font-family: "Comfortaa", bold;
+  font-size: 50pt;
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 15px;
+  top: -1745px;
+  z-index: 7;
+  text-shadow: 1px 1px 5px black;
+}
+
+/* ----------------------------------  
+   FOOTER ESTILOS
+   ---------------------------------- */
+
+/* LE DAMOS UN ESTILO AL FOOTER */
+.footer {
+  padding: 0px;
+}
+
+/* RESETEAMOS LOS ESTILOS DEL FOOTER */
+.ul-footer {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.ul-footer a {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.ul-footer a:hover {
+  color: rgb(70, 70, 70);
+}
+
+/* RESETEAMOS LOS ESTILOS DE LAS CATEGORÍAS */
+.li-footer {
+  text-decoration: none;
+}
+
+/* LIBRERÍA FONT AWESOME PARA LOS LOGOS DE FACEBOOK Y WHATS */
+.font-awesome-custom {
+  font-size: 20px;
+}
+
+/* ----------------------------------  
+   BANNER OFERTAS
+   ---------------------------------- */
+
+.contenedor-imagenes2 {
+  width: 100%;
+}
+
+.imagenes2 {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  z-index: 1;
+}
+
+.cuadro-ofertas {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  left: 0px;
+  top: -500px;
+  z-index: 2;
+}
+
+.cuadro-ofertas2 {
+  width: 75%;
+  height: 200px;
+  border-radius: 25px;
+  background-color: #61171493;
+  border: 0;
+  font-family: "Comfortaa", bold;
+  font-size: 90pt;
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 190px;
+  top: -725px;
+  z-index: 3;
+  text-align: center;
+}
+
+.texto-ofertas {
+  font-family: "Comfortaa", bold;
+  font-size: 13pt;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  left: 0px;
+  top: -780px;
+  z-index: 4;
+}
+.texto-ofertas2 {
+  font-family: "Comfortaa", bold;
+  font-size: 13pt;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  left: -83px;
+  top: -963px;
+  z-index: 5;
+}
+.texto-ofertas3 {
+  font-family: "Comfortaa", bold;
+  font-size: 9pt;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  left: 70px;
+  top: -873px;
+  z-index: 6;
+}
+
+.cuadro-ofertasaux {
+  width: 100%;
+  height: 250px;
+  background-color: #61171400;
+  position: relative;
+  left: 0px;
+  top: -250px;
+  z-index: 7;
+}
+
+.cuadro-ofertasaux:hover ~ .cuadro-ofertas {
+  background-color: #61171493;
+}
+
+.cuadro-ofertasaux:hover ~ .cuadro-ofertas2 {
+  background-color: #61171400;
+}
+
+/* ----------------------------------  
+   CARTAS ZAPATOS
+   ---------------------------------- */
+
+/* CONTENEDOR GENERAL DE EN DÓNDE VAN LAS CARTAS*/
+.contenedor-card-zapatos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENEDOR INDIVIDUAL DE LAS CARTAS 
+   En el div donde se pone este selector, se contendrán todos
+   los elementos necesarios como imagen, texto, descripsción
+   y botones.
+*/
+.card {
+  width: 15rem;
+  transition: all ease-in-out 0.2s;
+  margin: 16px;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* PROPIEDADES DE LA IMAGEN */
+.card-img-top {
+  height: 100%;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TITULO DEL ZAPATO */
+.card-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* DESCRIPCIÓN DEL PRODUCTO */
+.card-text {
+  color: grey;
+}
+
+/* PRECIO DEL PRODUCTO */
+.card-precio {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  justify-content: center;
+  text-align: center;
+  color: #8b1d1d;
+}
+
+.btn-bg {
+  background-color: black;
+  color: #fff;
+  padding: 2px 12px;
+}
+
+.btn {
+  transition: all ease-in-out 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #8b1d1d;
+  color: #fff;
+}

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Oswald:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/all.min.css" /> <!-- LIBRERÍA ÍCONOS -->
+    <link rel="stylesheet" href="styles/fontawesome.min.css" />  <!-- LIBRERÍA ÍCONOS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />  <!-- LIBRERÍA BOOTSTRAP -->
+    <link rel="stylesheet" href="styles/normalize.css" />  <!-- NORMALIZAMOS ESTILOS -->
+    <link rel="stylesheet" href="styles/styles.css" />  <!-- ESTILOS PROPIOS -->
+  </head>
+
+  <!-- Comienza el cuerpo de la página -->
+
+  <body>
+    <!-- Header del header -->
+    <div>
+      <nav class="navbar headerDelHeader">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link headerDelHeader" href="#">Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerDelHeader" href="#">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headerDelHeader" href="#">Ayuda</a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </div>
+
+    <!--  Header de la página  -->
+    <div class="headerLogo">
+      <img src="img/logoOsmiller.png" width="250" />
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="row nav-row">
+      <div class="col">
+        <nav class="navbar navbar-light">
+          <div class="container">
+          </div>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="navbar navbar-light justify-content-center">
+          <ul class="nav">
+            <li class="nav-item navbarCategorias">
+              <a class="nav-link" href="#">MUJERES</a>
+            </li>
+            <li class="nav-item navbarCategorias">
+              <a class="nav-link" href="#">HOMBRE</a>
+            </li>
+            <li class="nav-item navbarCategorias">
+              <a class="nav-link" href="#">NIÑOS</a>
+            </li>
+            <li class="nav-item navbarCategorias">
+              <a class="nav-link ofertas" href="#">OFERTAS</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="navbar navbar-light">
+          <div class="container justify-content-center">
+            <a class="navbar-brand" href="#">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Buscar"
+              />
+            </a>
+            <a href="#"><i class="far fa-user material-icons"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag material-icons"></i></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--
+      COMIENZA EL CONTENIDO DE LA PÁGINA WEB 
+    -->
+
+    <!-- Ofertas banner -->
+    <!-- <div class="contenedor-imagenes2">
+      <div>
+        <img src="img/ofertaca.png" class="imagenes2" />
+      </div>
+      <div
+        class="cuadro-ofertasaux"
+        onclick="location.href='categoriasGenerico.html'"
+      ></div>
+      <div class="cuadro-ofertas"></div>
+      <div class="cuadro-ofertas2">40%</div>
+      <div class="texto-ofertas">
+        Aprovecha los descuentos de mitad de temporada en productos
+        seleccionados.<br />¡ Acumulable con otras promociones !
+      </div>
+      <div class="texto-ofertas2">HASTA</div>
+      <div class="texto-ofertas3">de descuentos</div>
+    </div> -->
+
+    <!--  ¿Cuál es tu estilo?  -->
+    <div class="contenedor-text">
+      <div>
+        <h3 class="contenedor-text-style">¿Cuál es tu estilo?</h3>
+      </div>
+    </div>
+
+    <!--  Contenedor de cartas con MUJERES, HOMBRE Y NIÑOS  -->
+    <div class="contenedor-imagenes">
+      <div>
+        <div>
+          <img src="img/mujerca.png" class="contenedor-imagenes-style" />
+        </div>
+        <div class="fondo-atras-imagenes"></div>
+        <div
+          class="contenedor-imagenes-aux"
+          onclick="location.href='categoriasGenerico.html'"
+        ></div>
+        <div class="borde-imagen"></div>
+        <div class="cuadro-texto"></div>
+        <div class="texto-imagen">MUJER</div>
+      </div>
+      <div>
+        <div>
+          <img src="img/hombreca.png" class="contenedor-imagenes-style" />
+        </div>
+        <div class="fondo-atras-imagenes"></div>
+        <div
+          class="contenedor-imagenes-aux"
+          onclick="location.href='categoriasGenerico.html'"
+        ></div>
+        <div class="borde-imagen"></div>
+        <div class="cuadro-texto"></div>
+        <div class="texto-imagen">HOMBRE</div>
+      </div>
+      <div>
+        <div>
+          <img src="img/ninoca.png" class="contenedor-imagenes-style" />
+        </div>
+        <div class="fondo-atras-imagenes"></div>
+        <div
+          class="contenedor-imagenes-aux"
+          onclick="location.href='categoriasGenerico.html'"
+        ></div>
+        <div class="borde-imagen"></div>
+        <div class="cuadro-texto"></div>
+        <div class="texto-imagen">NIÑO</div>
+      </div>
+    </div>
+
+    <div style="padding: 60px"></div>
+
+    <section class="contenedor-card-zapatos">
+      <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+            <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+            <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+            <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+            <div class="card m-3">
+        <img src="img/zapato1.png" class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Nombre zapato</h3>
+          <p class="card-text m-0">Descripción del producto</p>
+          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
+          <div class="row">
+            <ul class="nav">
+              <li class="col card-precio">$100.000</li>
+              <li class="col card-precio">
+                <a href="#" class="btn btn-bg">COMPRAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="padding: 60px"></div>
+
+    <!-- 
+      TERMINA EL CONTENIDO DE LA PÁGINA WEB 
+    -->
+
+    <!-- Footer de la página -->
+
+    <footer class="row nav-row pt-4">
+      <div class="col">
+        <nav class="footer navbar-light">
+          <div class="container justify-content-center">
+            <ul>
+              <a class="navbar-brand" href="#">
+                <img src="img/logoOsmillerSinLetra.png" alt="" />
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="footer navbar-light">
+          <div class="container justify-content-center">
+            <ul class="ul-footer contenedor-text-style">
+              <h4 class="d-flex">CONTACTO</h4>
+              <li><a class="ul-footer" href="">Quienes somos</a></li>
+              <li><a class="ul-footer" href="">Tiendas</a></li>
+              <li>
+                <a class="ul-footer" href=""
+                  >Acuerdo de organización empresarial</a
+                >
+              </li>
+              <li><a class="ul-footer" href="">Aviso de organización</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="footer navbar-light">
+          <div class="container justify-content-center">
+            <ul class="ul-footer contenedor-text-style">
+              <h4 class="d-flex">ASISTENCIA</h4>
+              <li><a class="ul-footer" href="">Quienes somos</a></li>
+              <li><a class="ul-footer" href="">Tiendas</a></li>
+              <li>
+                <a class="ul-footer" href=""
+                  >Acuerdo de organización empresarial</a
+                >
+              </li>
+              <li><a class="ul-footer" href="">Aviso de organización</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="footer navbar-light">
+          <div class="container justify-content-center">
+            <ul class="ul-footer contenedor-text-style">
+              <h4 class="d-flex">TÉRMINOS Y CONDICIONES</h4>
+              <li><a class="ul-footer" href="">Quienes somos</a></li>
+              <li><a class="ul-footer" href="">Tiendas</a></li>
+              <li>
+                <a class="ul-footer" href=""
+                  >Acuerdo de organización empresarial</a
+                >
+              </li>
+              <li><a class="ul-footer" href="">Aviso de organización</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="footer navbar-light">
+          <div class="container justify-content-center">
+            <ul class="ul-footer contenedor-text-style li-footer">
+              <h4 class="d-flex">CONTACTO</h4>
+              <li>
+                <a class="ul-footer" href=""
+                  ><i class="fab fa-facebook font-awesome-custom">
+                    Página oficial
+                  </i></a
+                >
+              </li>
+              <li>
+                <a class="ul-footer" href=""
+                  ><i class="fab fa-whatsapp font-awesome-custom">
+                    (+57) 300 600 8000
+                  </i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="row nav-row">
+        <h6>XDDDDDDDDDDDD</h6>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
