@@ -413,3 +413,67 @@ IMAGEN DE HEADER
   background-color: #8b1d1d;
   color: #fff;
 }
+
+/* ESTILO PARA ARREGLAR LA SELECCIÓN DE VÍNCULOS */
+.cursor-link-clicker{
+  cursor: pointer;
+}
+
+
+/* ----------------------------------  
+   BANNER CATEGORÍAS
+   ---------------------------------- */
+
+   .categoria-style-text {
+    padding-left: 67%;
+    align-items: center;
+    justify-content: end;
+    text-shadow: 1px 1px 3px black;
+    font-family: "Comfortaa", bold;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    display: flex;
+  }
+  
+  .categoria-style {
+    display: flex;
+    width: 100.85%;
+  }
+  
+  .categoria-style.mujeres {
+    background-image: url(/img/mujerBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: 100%;
+    background-position-y: 20%;
+    height: 45vh;
+  }
+
+  .categoria-style.hombres {
+    background-image: url(/img/mujerBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: 100%;
+    background-position-y: 20%;
+    height: 45vh;
+  }
+
+  .categoria-style.ninos {
+    background-image: url(/img/mujerBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: 100%;
+    background-position-y: 20%;
+    height: 45vh;
+  }
+
+  .categoria-style.ofertas {
+    background-image: url(/img/mujerBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: 100%;
+    background-position-y: 20%;
+    height: 45vh;
+  }
+
