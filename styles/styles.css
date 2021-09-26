@@ -19,6 +19,12 @@ body {
   justify-content: flex-end;
 }
 
+@media (max-width: 600px) {
+  .navbar.headerDelHeader {
+    justify-content: center;
+  }
+}
+
 .nav-link.headerDelHeader {
   color: black;
   font-size: 15px;
@@ -471,4 +477,148 @@ IMAGEN DE HEADER
   background-position-x: 100%;
   background-position-y: 35%;
   height: 45vh;
+}
+
+/* ----------------------------------
+   LOGIN COMIENZA
+   ---------------------------------- */
+
+.card-body1 {
+  /*cuerpo de cuadro iniciar sesion*/
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.card-body2 {
+  /*cuerpo de cuadro unirse*/
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.card-borderLog2 {
+  /*Tamaño cuadro unirse*/
+  height: 425px;
+}
+
+.btn-Insesion {
+  /*boton Iniciar sesion*/
+  background-color: rgb(121, 15, 15);
+  color: rgb(255, 255, 255);
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  border-radius: 12px;
+}
+
+.justificar-centro {
+  /*Tamaño botones login*/
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 30px;
+}
+
+.form-check-label {
+  /* Texto de mantener sesion abierta*/
+  color: rgb(53, 53, 53);
+}
+
+.TextoInsesion-style {
+  /* Texto de Iniciar sesion*/
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  color: rgb(121, 15, 15);
+  height: (500px);
+}
+
+.TextoUnete-style {
+  /* Texto de Unete*/
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  color: rgb(121, 15, 15);
+  height: (300px);
+}
+
+.TextoUnete1-style {
+  /* Texto de Unete1*/
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  height: (300px);
+}
+
+.TextoUnete2-style {
+  /* Texto de Unete2*/
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  height: (300px);
+}
+
+/* ----------------------------------
+   LOGIN TERMINA
+   ---------------------------------- */
+
+.contenedor-card-login {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login-border {
+  /*Tamaño cuadro iniciar sesion*/
+  width: 55vh;
+  padding: 32px;
+  border-radius: 15px;
+}
+
+.card-login-border.login {
+  /*Tamaño cuadro iniciar sesion*/
+  height: 408.875px;
+  justify-content: center;
+}
+
+.card-login-title {
+  /* Texto de Iniciar sesion*/
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  color: #8b1d1d;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.card-login-text {
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  height: (300px);
+}
+
+.btn.boton-login {
+  width: 190px;
+  padding: 2px;
+  border-radius: 12px;
+  border-color: #8b1d1d;
+  background-color: #8b1d1d;
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+}
+
+.btn.boton-signup {
+  width: 250px;
+  padding: 2px;
+  border-radius: 12px;
+  border-color: #8b1d1d;
+  background-color: #8b1d1d;
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+}
+
+.card-login-button {
+  display: flex;
+  justify-content: center;
 }
