@@ -2,7 +2,6 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
-  width: 99.35%;
 }
 
 /* ----------------------------------  
@@ -77,6 +76,7 @@ IMAGEN DE HEADER
 .row.nav-row {
   background-color: rgb(197, 197, 197);
   align-items: center;
+  height: 20%;
 }
 
 .row .col {
@@ -158,7 +158,7 @@ IMAGEN DE HEADER
 
 .contenedor-imagenes-style {
   width: 100%;
-  height:100%;
+  height: 100%;
   position: relative;
   z-index: 1;
 }
@@ -179,7 +179,7 @@ IMAGEN DE HEADER
   color: rgb(255, 255, 255);
   position: relative;
   top: -1245px;
-  left:15px;
+  left: 15px;
   z-index: 3;
   text-shadow: 1px 1px 5px black;
 }
@@ -200,44 +200,112 @@ IMAGEN DE HEADER
 }
 
 /* ----------------------------------  
-   FOOTER ESTILOS
+   FOOTER NUEVOS ESTILOS
    ---------------------------------- */
 
-/* LE DAMOS UN ESTILO AL FOOTER */
-.footer {
+footer.nuevo {
+  display: grid;
+  padding: 50px, 100px;
+  background-color: rgb(197, 197, 197);
+  justify-content: center;
+}
+
+footer .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0px;
+}
+
+footer .container .seccion-image {
+  margin: auto;
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+footer .container .seccion-footer h3 {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  margin-bottom: 15px;
+  cursor: default;
+  transition: all ease-in-out 0.2s;
+}
+
+footer .container .seccion-footer h3::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 50px;
+  height: 2px;
+  background-color: #8b1d1d;
+}
+
+.ul-footer-nuevo {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 10px;
   padding: 0px;
 }
 
-/* RESETEAMOS LOS ESTILOS DEL FOOTER */
-.ul-footer {
+.ul-footer-nuevo li {
   list-style: none;
+}
+
+.ul-footer-nuevo li a {
   text-decoration: none;
+  transition: all ease-in-out 0.2s;
   color: black;
 }
 
-.ul-footer a {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+.ul-footer-nuevo li a i {
+  transition: all ease-in-out 0.2s;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 22px;
 }
 
-.ul-footer a:hover {
-  color: rgb(70, 70, 70);
+.ul-footer-nuevo li a i:hover {
+  background-color: #8b1d1d;
 }
 
-/* RESETEAMOS LOS ESTILOS DE LAS CATEGORÍAS */
-.li-footer {
-  text-decoration: none;
+.links-footer {
+  position: relative;
 }
 
-/* LIBRERÍA FONT AWESOME PARA LOS LOGOS DE FACEBOOK Y WHATS */
-.font-awesome-custom {
-  font-size: 20px;
+.links-footer li a:hover {
+  color: rgb(33, 33, 33);
+  text-decoration: underline;
 }
 
-.textocopyr {
-  color: rgb(0, 0, 0);
-  padding-left: 46%;
-  font-size: 8pt;
+@media (max-width: 991px) {
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  footer .container {
+    text-align: center;
+  }
+  footer .container .seccion-footer h3::before {
+    margin-left: 38%;
+    margin-right: auto;
+  }
+  .ul-footer-nuevo li a i {
+    margin: auto;
+  }
 }
 
 /* ----------------------------------  
@@ -274,7 +342,7 @@ IMAGEN DE HEADER
   color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
-  left:200px;
+  left: 200px;
   top: -725px;
   z-index: 3;
 }
@@ -468,73 +536,71 @@ IMAGEN DE HEADER
 /* ----------------------------------
    LOGIN COMIENZA
    ---------------------------------- */
-   
-  .contenedor-card-login {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card-login-border {
-    /*Tamaño cuadro iniciar sesion*/
-    width: 55vh;
-    padding: 32px;
-    border-radius: 15px;
-  }
-  
-  .card-login-border.login {
-    /*Tamaño cuadro iniciar sesion*/
-    height: 431.47px;
-    justify-content: center;
-  }
-  
-  .card-login-title {
-    /* Texto de titulo Iniciar sesion*/
-    font-family: "Comfortaa", bold;
-    font-weight: 900;
-    color: #8b1d1d;
-    text-align: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-  
-  .card-login-text {
-    font-family: "Comfortaa", bold;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
-    height: (300px);
-  }
-  
-  .btn.boton-login {
-    /* Boton Iniciar sesion*/
-    width: 190px;
-    padding: 2px;
-    border-radius: 12px;
-    border-color: #8b1d1d;
-    background-color: #8b1d1d;
-    font-family: "Comfortaa", bold;
-    font-weight: 900;
-  }
-  
-  .btn.boton-signup {
-    /* Texto de titulo Iniciar sesion*/
-    width: 250px;
-    padding: 2px;
-    border-radius: 12px;
-    border-color: #8b1d1d;
-    background-color: #8b1d1d;
-    font-family: "Comfortaa", bold;
-    font-weight: 900;
-  }
-  
-  .card-login-button {
-    display: flex;
-    justify-content: center;
-  }
+
+.contenedor-card-login {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login-border {
+  /*Tamaño cuadro iniciar sesion*/
+  width: 55vh;
+  padding: 32px;
+  border-radius: 15px;
+}
+
+.card-login-border.login {
+  /*Tamaño cuadro iniciar sesion*/
+  height: 431.47px;
+  justify-content: center;
+}
+
+.card-login-title {
+  /* Texto de titulo Iniciar sesion*/
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  color: #8b1d1d;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.card-login-text {
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  height: (300px);
+}
+
+.btn.boton-login {
+  /* Boton Iniciar sesion*/
+  width: 190px;
+  padding: 2px;
+  border-radius: 12px;
+  border-color: #8b1d1d;
+  background-color: #8b1d1d;
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+}
+
+.btn.boton-signup {
+  /* Texto de titulo Iniciar sesion*/
+  width: 250px;
+  padding: 2px;
+  border-radius: 12px;
+  border-color: #8b1d1d;
+  background-color: #8b1d1d;
+  font-family: "Comfortaa", bold;
+  font-weight: 900;
+}
+
+.card-login-button {
+  display: flex;
+  justify-content: center;
+}
 
 /* ----------------------------------
    LOGIN TERMINA
    ---------------------------------- */
-
-
