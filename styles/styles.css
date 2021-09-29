@@ -1,3 +1,9 @@
+:root {
+  --navbar-footer-color: rgb(197, 197, 197);
+  --text-title-color: #000000;
+  --text-title-color-logo: #8b1d1d;
+}
+
 /* DAMOS PROPIEDADES AL BODY DE LA PÁGINA */
 body {
   font-family: "Poppins", sans-serif;
@@ -48,71 +54,100 @@ IMAGEN DE HEADER
    BARRA DE NAVEGACIÓN (NAVBAR)
    ---------------------------------- */
 
-/* LE DAMOS UN COLOR AL FONDO DEL NAVBAR Y REINICIAMOS PADDING */
-.navbar {
-  padding: 0px;
-  background-color: rgb(197, 197, 197);
+.header-navbar {
+  background-color: var(--navbar-footer-color);
+  display: grid;
 }
 
-/* JUSTIFICAMOS LOS ELEMENTOS DEL NAVBAR (BOTONES DE NAVEGACIÓN MUJER, HOMBRE, NIÑO, OFERTAS)
-   EN TODO EL CENTRO DEL CONTENEDOR DEL NAVBAR */
-.navbar-nav {
+.header-navbar-nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0px;
+}
+
+.header-navbar-img {
+  display: flex;
+  width: 45px;
+  margin: 5px;
+  align-content: center;
+  position: end;
+}
+
+.header-navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
   justify-content: center;
 }
 
-/* LE DAMOS AL CONTENEDOR DEL NAVBAR UN PADDING ESPECÍFICO */
-.container-fluid.navbarContainer {
-  padding: 0px 10%;
-}
-
-/* SEGÚN CIERTO TAMAÑO, EL PADDING DEL NAVBAR TENDRÁ CIERTO TAMAÑO */
-@media (max-width: 991px) {
-  .container-fluid.navbarContainer {
-    padding: 0px 0px 0px 0px;
-  }
-}
-
-/* LE DAMOS UN COLOR DE BACKGROUND AL NAVBAR */
-.row.nav-row {
-  background-color: rgb(197, 197, 197);
-  align-items: center;
-  height: 20%;
-}
-
-.row .col {
-  background-color: inherit;
-}
-
-/* LE DAMOS ESTILOS A LOS BOTONES DEL NAVBAR. ESTO ANTES SE LLAMABA: product-intro2 */
-.navbarCategorias {
+.header-navbar-menu a {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 900;
-  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
 }
-
 .nav-link {
-  color: black;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  color: var(--text-title-color);
 }
 
 .nav-link:hover {
-  color: #8b1d1d;
+  color: var(--text-title-color-logo);
 }
 
 .nav-link.ofertas {
-  color: #8b1d1d;
+  color: var(--text-title-color-logo);
 }
 
 .nav-link.ofertas:hover {
-  color: rgb(225, 0, 0);
+  color: #d41e1e;
+}
+
+.header-navbar-derecha {
+  display: flex;
+  width: auto;
 }
 
 .form-control {
-  padding-top: 3px;
-  padding-bottom: 3px;
   border-radius: 10px;
+  width: 100%;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-control:focus {
+  box-shadow: initial;
+  border-color: var(--text-title-color-logo);
+}
+
+@media (max-width: 768px) {
+  .header-navbar-nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header-navbar-img {
+    display: none;
+  }
+  .header-navbar-nav {
+    grid-gap: 0;
+  }
+  .header-navbar-derecha {
+    display: inherit;
+    padding-bottom: 4px;
+  }
+  .nav-link {
+    padding-bottom: 0px;
+  }
+  .form-control {
+    width: 18rem;
+  }
 }
 
 /* ----------------------------------  
@@ -206,7 +241,7 @@ IMAGEN DE HEADER
 footer.nuevo {
   display: grid;
   padding: 50px, 100px;
-  background-color: rgb(197, 197, 197);
+  background-color: var(--navbar-footer-color);
   justify-content: center;
 }
 
@@ -242,7 +277,7 @@ footer .container .seccion-footer h3::before {
   left: 0px;
   width: 50px;
   height: 2px;
-  background-color: #8b1d1d;
+  background-color: var(--text-title-color-logo);
 }
 
 .ul-footer-nuevo {
@@ -250,6 +285,7 @@ footer .container .seccion-footer h3::before {
   display: grid;
   grid-gap: 10px;
   padding: 0px;
+  line-height: 18px;
 }
 
 .ul-footer-nuevo li {
@@ -257,9 +293,12 @@ footer .container .seccion-footer h3::before {
 }
 
 .ul-footer-nuevo li a {
+  font-family: "Comfortaa", bold;
+  font-weight: 700;
+  color: black;
+  font-size: 14px;
   text-decoration: none;
   transition: all ease-in-out 0.2s;
-  color: black;
 }
 
 .ul-footer-nuevo li a i {
@@ -276,8 +315,18 @@ footer .container .seccion-footer h3::before {
   font-size: 22px;
 }
 
+.footer-copyright {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Comfortaa", bold;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: rgb(170, 170, 170);
+}
+
 .ul-footer-nuevo li a i:hover {
-  background-color: #8b1d1d;
+  background-color: var(--text-title-color-logo);
 }
 
 .links-footer {
@@ -452,7 +501,7 @@ footer .container .seccion-footer h3::before {
   font-weight: 900;
   justify-content: center;
   text-align: center;
-  color: #8b1d1d;
+  color: var(--text-title-color-logo);
 }
 
 .btn-bg {
@@ -467,7 +516,7 @@ footer .container .seccion-footer h3::before {
 
 .btn:hover {
   transform: scale(1.1);
-  background-color: #8b1d1d;
+  background-color: var(--text-title-color-logo);
   color: #fff;
 }
 
@@ -561,7 +610,7 @@ footer .container .seccion-footer h3::before {
   /* Texto de titulo Iniciar sesion*/
   font-family: "Comfortaa", bold;
   font-weight: 900;
-  color: #8b1d1d;
+  color: var(--text-title-color-logo);
   text-align: center;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -579,8 +628,8 @@ footer .container .seccion-footer h3::before {
   width: 190px;
   padding: 2px;
   border-radius: 12px;
-  border-color: #8b1d1d;
-  background-color: #8b1d1d;
+  border-color: var(--text-title-color-logo);
+  background-color: var(--text-title-color-logo);
   font-family: "Comfortaa", bold;
   font-weight: 900;
 }
@@ -590,8 +639,8 @@ footer .container .seccion-footer h3::before {
   width: 250px;
   padding: 2px;
   border-radius: 12px;
-  border-color: #8b1d1d;
-  background-color: #8b1d1d;
+  border-color: var(--text-title-color-logo);
+  background-color: var(--text-title-color-logo);
   font-family: "Comfortaa", bold;
   font-weight: 900;
 }
