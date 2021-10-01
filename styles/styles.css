@@ -189,6 +189,7 @@ IMAGEN DE HEADER
   padding-right: 7%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap
 }
 
 .contenedor-imagenes-style {
@@ -374,10 +375,19 @@ footer .container .seccion-footer h3::before {
    BANNER OFERTAS
    ---------------------------------- */
 
-.contenedor-imagenes2 {
-  width: 100.8%;
-  height: 250px;
+@media only screen and (max-width:839px){
+  .contenedor-imagenes2 {
+    width: 100%;
+    height: 300px;
+  }
 }
+@media only screen and (min-width:840px){
+  .contenedor-imagenes2 {
+    width: 100%;
+    height: 250px;
+  }
+}
+
 
 .imagenes2 {
   width: 100%;
@@ -387,15 +397,19 @@ footer .container .seccion-footer h3::before {
 }
 
 .cuadro-ofertas {
-  width: 100%;
-  height: 250px;
+  height: 80%;
+  border-radius: 25px;
+  background-color: #61171493;
   position: relative;
   top: -500px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
   z-index: 2;
 }
 
 .cuadro-ofertas2 {
-  width: 75%;
+
   height: 80%;
   border-radius: 25px;
   background-color: #61171493;
@@ -404,19 +418,20 @@ footer .container .seccion-footer h3::before {
   color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
-  left: 200px;
+
   top: -725px;
   z-index: 3;
+
 }
 
-.texto-ofertas {
+.texto-ofertas1 {
   font-family: "Comfortaa", bold;
   font-size: 13pt;
   color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
   left: 0px;
-  top: -780px;
+  top: -57px;
   z-index: 4;
 }
 
@@ -426,8 +441,8 @@ footer .container .seccion-footer h3::before {
   color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
-  left: -83px;
-  top: -963px;
+left: -83px;
+  top: 5px;
   z-index: 5;
 }
 
@@ -437,18 +452,26 @@ footer .container .seccion-footer h3::before {
   color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
-  top: -873px;
+  top: -70px;
   z-index: 6;
+}
+.texto-ofertas4 {
+  font-family: "Comfortaa", bold;
+  font-size: 80pt;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  top: -29px;
+  z-index: 7;
 }
 
 .cuadro-ofertasaux {
   width: 100%;
-  height: 250px;
+  height: 100%;
   background-color: #61171400;
   position: relative;
-  left: 0px;
   top: -250px;
-  z-index: 7;
+  z-index: 8;
 }
 
 .cuadro-ofertasaux:hover ~ .cuadro-ofertas {
