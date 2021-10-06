@@ -182,29 +182,55 @@ IMAGEN DE HEADER
    CONTENEDORES DE CARTAS CON MUJER, HOMBRE Y MUJER
    ---------------------------------- */
 
-.contenedor-imagenes {
-  width: 100%;
-  height: 583px;
-  padding-left: 7%;
-  padding-right: 7%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap
-}
+  @media only screen and (min-width:1450px){
+    .contenedor-imagenes {
+      width: 100%;
+      height: 583px;
+      padding-left: 7%;
+      padding-right: 7%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap
+    }
+  }
+  
+  @media only screen and (max-width:1449px) and (min-width: 976px){
+    .contenedor-imagenes {
+      width: 100%;
+      height: 1196px;
+      padding-left: 7%;
+      padding-right: 7%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap
+    }
+  }
+
+  @media only screen and (max-width:975px){
+    .contenedor-imagenes {
+      width: 100%;
+      height: 1880px;
+      padding-left: 7%;
+      padding-right: 7%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap
+    }
+  }
 
 .contenedor-imagenes-style {
   width: 100%;
-  height: 100%;
+  height: 583px;
   position: relative;
   z-index: 1;
 }
 
 .borde-imagen {
   width: 95.13%;
-  height: 96.56%;
+  height: 81%;
   border: 2.5px solid #ffffff;
   position: relative;
-  top: -1155px;
+  top: -1125px;
   left: 10px;
   z-index: 2;
 }
@@ -214,7 +240,7 @@ IMAGEN DE HEADER
   font-size: 50pt;
   color: rgb(255, 255, 255);
   position: relative;
-  top: -1245px;
+  top: -1215px;
   left: 15px;
   z-index: 3;
   text-shadow: 1px 1px 5px black;
@@ -222,10 +248,10 @@ IMAGEN DE HEADER
 
 .contenedor-imagenes-aux {
   width: 100%;
-  height: 100%;
+  height: 81%;
   border: 0px solid #ffffff;
   position: relative;
-  top: -583px;
+  top: -553px;
   z-index: 4;
 }
 
@@ -375,17 +401,9 @@ footer .container .seccion-footer h3::before {
    BANNER OFERTAS
    ---------------------------------- */
 
-@media only screen and (max-width:839px){
-  .contenedor-imagenes2 {
-    width: 100%;
-    height: 300px;
-  }
-}
-@media only screen and (min-width:840px){
-  .contenedor-imagenes2 {
-    width: 100%;
-    height: 250px;
-  }
+.contenedor-imagenes2 {
+  width: 100%;
+  height: 250px;
 }
 
 
@@ -396,43 +414,48 @@ footer .container .seccion-footer h3::before {
   z-index: 1;
 }
 
+.cuadro-ofertas2 {
+  width: 100%;
+  height: 100%;
+  background-color: #14612500;
+  position: relative;
+  top:-500px;
+  z-index: 2;
+}
+
 .cuadro-ofertas {
   height: 80%;
   border-radius: 25px;
   background-color: #61171493;
   position: relative;
-  top: -500px;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 25px;
-  z-index: 2;
-}
-
-.cuadro-ofertas2 {
-
-  height: 80%;
-  border-radius: 25px;
-  background-color: #61171493;
-  font-family: "Comfortaa", bold;
-  font-size: 90pt;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  position: relative;
-
-  top: -725px;
+  top:-750px;
   z-index: 3;
-
 }
 
-.texto-ofertas1 {
-  font-family: "Comfortaa", bold;
-  font-size: 13pt;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  position: relative;
-  left: 0px;
-  top: -57px;
-  z-index: 4;
+@media only screen and (max-width:835px){
+  .texto-ofertas1 {
+    font-family: "Comfortaa", bold;
+    font-size: 10pt;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    top:-64px;
+    z-index: 4;
+  }
+}
+@media only screen and (min-width:834px){
+  .texto-ofertas1 {
+    font-family: "Comfortaa", bold;
+    font-size: 13pt;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    top:-64px;
+    z-index: 4;
+  }
 }
 
 .texto-ofertas2 {
@@ -441,9 +464,9 @@ footer .container .seccion-footer h3::before {
   color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
-left: -83px;
-  top: 5px;
-  z-index: 5;
+  left: -83px;
+  top:11px;
+  z-index: 4;
 }
 
 .texto-ofertas3 {
@@ -452,8 +475,8 @@ left: -83px;
   color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
-  top: -70px;
-  z-index: 6;
+  top:-64px;
+  z-index: 4;
 }
 .texto-ofertas4 {
   font-family: "Comfortaa", bold;
@@ -461,24 +484,24 @@ left: -83px;
   color: rgb(255, 255, 255);
   text-align: center;
   position: relative;
-  top: -29px;
-  z-index: 7;
+  top:-24px;
+  z-index: 4;
 }
 
 .cuadro-ofertasaux {
   width: 100%;
   height: 100%;
-  background-color: #61171400;
+  background-color: #2f146100;
   position: relative;
-  top: -250px;
-  z-index: 8;
-}
-
-.cuadro-ofertasaux:hover ~ .cuadro-ofertas {
-  background-color: #61171493;
+  top:-250px;
+  z-index: 5;
 }
 
 .cuadro-ofertasaux:hover ~ .cuadro-ofertas2 {
+  background-color: #61171493;
+}
+
+.cuadro-ofertasaux:hover ~ .cuadro-ofertas {
   background-color: #61171400;
 }
 
