@@ -99,14 +99,68 @@
 
     <!---------------------------------------------
       COMIENZA EL CONTENIDO DE LA PÁGINA WEB 
-    -->
+  ---------------------------------------------->
+    <div style="padding: 60px"></div>
 
-    <div class="quienes-somos-container">
-      <h1 class="quienes-somos-title">¿QUIÉNES SOMOS?</h1>
-      <div id="contenido-quienes-somos"></div>
+    <div class="contenedor-card-login">
+      <form class="card card-login-border login">
+        <div>
+          <h1 class="card-login-title">REGISTRARSTE</h1>
+        </div>
+        <div class="mb-4">
+          <input
+            type="email"
+            name="email"
+            class="form-control card-login-text"
+            id="exampleDropdownFormEmail1"
+            placeholder="Correo electrónico"
+          />
+        </div>
+        <div class="mb-4">
+          <input
+            type="password"
+            name="confirm_password"
+            class="form-control card-login-text"
+            id="exampleDropdownFormPassword1"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            name="password"
+            class="form-control card-login-text"
+            id="exampleDropdownFormPassword1"
+            placeholder="Confirmar contraseña"
+          />
+        </div>
+        <div class="mb-4">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="dropdownCheck"
+            />
+            <label class="form-check-label card-login-text" for="dropdownCheck">
+              Mantener sesión iniciada
+            </label>
+          </div>
+        </div>
+        <div class="card-login-button">
+          <button
+            type="submit"
+            value="Send"
+            class="btn boton-login btn-primary"
+          >
+            INICIAR SESIÓN
+          </button>
+        </div>
+      </form>
     </div>
 
-    <!-- 
+    <div style="padding: 60px"></div>
+
+    <!------------------------------------------------
       TERMINA EL CONTENIDO DE LA PÁGINA WEB 
     ------------------------------------------------>
 
@@ -193,8 +247,16 @@
         </div>
       </div>
     </footer>
+    <div class="footer-copyright">
+      <p>© 2021 OSMILLER CALZADO</p>
+    </div>
     <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="pagesJSON/quienesSomos/script.js"></script>
   </body>
 </html>
