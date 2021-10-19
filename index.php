@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,92 +25,15 @@
     <!-- ESTILOS PROPIOS -->
   </head>
 
-  <form action=""></form>
-
   <!-- Comienza el cuerpo de la página -->
 
   <body>
-    <!-- Header del header -->
-    <div>
-      <nav class="navbar headerDelHeader">
-        <ul class="nav">
-          <li class="nav-item">
-            <a
-              class="nav-link headerDelHeader cursor-link-clicker"
-              href="login.html"
-              >Iniciar sesión</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link headerDelHeader cursor-link-clicker"
-              href="quienesSomos.html"
-              >Quienes somos</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link headerDelHeader cursor-link-clicker"
-              href="ayuda.html"
-              >Ayuda</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <!-- Incluimos el navbar -->
+    <?php require_once 'pagesJSON/footer_navbar/nav.php';?>
 
-    <!--  Header de la página  -->
-    <div class="headerLogo">
-      <img src="img/logoOsmiller.png" width="250" />
-    </div>
-
-    <!-- Barra de navegación -->
-    <header class="header-navbar">
-      <nav class="header-navbar-nav">
-        <div class="header-navbar-img">
-          <a href="index.html"
-            ><img src="img/logoOsmillerSinLetra.png" alt="HOME"
-          /></a>
-        </div>
-        <div>
-          <ul class="header-navbar-menu">
-            <li>
-              <a class="nav-link" href="categoriaMujeres.html">MUJERES</a>
-            </li>
-            <li>
-              <a class="nav-link" href="categoriaHombres.html">HOMBRES</a>
-            </li>
-            <li><a class="nav-link" href="categoriaNinos.html">NIÑOS</a></li>
-            <li>
-              <a class="nav-link ofertas" href="categoriaOfertas.html"
-                >OFERTAS</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="header-navbar-derecha">
-          <ul class="header-navbar-menu">
-            <a class="navbar-brand">
-              <input class="form-control" type="text" placeholder="Buscar" />
-            </a>
-            <a href="miCuenta.html"
-              ><i class="far fa-user material-icons"></i
-            ></a>
-            <a href="carritoCompras.html"
-              ><i class="fas fa-shopping-bag material-icons"></i
-            ></a>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!--
-      COMIENZA EL CONTENIDO DE LA PÁGINA WEB 
-    -->
+    <!--  COMIENZA EL CONTENIDO DE LA PÁGINA WEB -->
 
     <!-- Ofertas banner -->
-
-    
       <div class="contenedor-imagenes2">
         <div>
           <img src="img/ofertaca.png" class="imagenes2" />
@@ -132,7 +51,6 @@
       </div>
     </div>
 
- 
     <div style="padding: 30px"></div>
 
     <!--  ¿Cuál es tu estilo?  -->
@@ -391,91 +309,8 @@
     -->
 
     <!-- Footer de la página -->
+    <?php require_once 'pagesJSON/footer_navbar/footer.php';?>
 
-    <footer class="footer nuevo pt-4">
-      <div class="container">
-        <div class="seccion-footer seccion-image">
-          <a href="index.html">
-            <img src="img/logoOsmiller.png" alt="" />
-          </a>
-        </div>
-        <div class="seccion-footer links-footer">
-          <h3>NOSOTROS</h3>
-          <ul class="ul-footer-nuevo">
-            <li>
-              <a href="quienesSomos.html">Quienes somos</a>
-            </li>
-            <li>
-              <a href="tiendas.html">Tiendas</a>
-            </li>
-            <li>
-              <a href="acuerdoOrganizacion.html"
-                >Acuerdo de organización empresarial</a
-              >
-            </li>
-            <li>
-              <a href="avisoOrganizacion.html">Aviso de organización</a>
-            </li>
-          </ul>
-        </div>
-        <div class="seccion-footer links-footer">
-          <h3>ASISTENCIA</h3>
-          <ul class="ul-footer-nuevo">
-            <li>
-              <a href="quienesSomos.html">Quienes somos</a>
-            </li>
-            <li>
-              <a href="tiendas.html">Tiendas</a>
-            </li>
-            <li>
-              <a href="acuerdoOrganizacion.html"
-                >Acuerdo de organización empresarial</a
-              >
-            </li>
-            <li>
-              <a href="avisoOrganizacion.html">Aviso de organización</a>
-            </li>
-          </ul>
-        </div>
-        <div class="seccion-footer links-footer">
-          <h3>TÉRMINOS Y CONDICIONES</h3>
-          <ul class="ul-footer-nuevo">
-            <li>
-              <a href="quienesSomos.html">Quienes somos</a>
-            </li>
-            <li>
-              <a href="tiendas.html">Tiendas</a>
-            </li>
-            <li>
-              <a href="acuerdoOrganizacion.html"
-                >Acuerdo de organización empresarial</a
-              >
-            </li>
-            <li>
-              <a href="avisoOrganizacion.html">Aviso de organización</a>
-            </li>
-          </ul>
-        </div>
-        <div class="seccion-footer">
-          <h3>CONTACTO</h3>
-          <ul class="ul-footer-nuevo">
-            <li>
-              <a href="https://www.facebook.com" target="_blank"
-                ><i class="fab fa-facebook font-awesome-custom-2"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.whatsapp.com" target="_blank"
-                ><i class="fab fa-whatsapp font-awesome-custom-2"> </i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <div class="footer-copyright">
-      <p>© 2021 OSMILLER CALZADO</p>
-    </div>
     <!-- SCRIPTS -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
