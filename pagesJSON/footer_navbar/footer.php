@@ -15,12 +15,12 @@
               <a href="tiendas.html">Tiendas</a>
             </li>
             <li>
-              <a href="acuerdoOrganizacion.html"
+              <a href="paginaacuerdos.html"
                 >Acuerdo de organización empresarial</a
               >
             </li>
             <li>
-              <a href="avisoOrganizacion.html">Aviso de organización</a>
+              <a href="paginaacuerdos.html">Aviso de organización</a>
             </li>
           </ul>
         </div>
@@ -34,12 +34,12 @@
               <a href="tiendas.html">Tiendas</a>
             </li>
             <li>
-              <a href="acuerdoOrganizacion.html"
+              <a href="paginaacuerdos.html"
                 >Acuerdo de organización empresarial</a
               >
             </li>
             <li>
-              <a href="avisoOrganizacion.html">Aviso de organización</a>
+              <a href="paginaacuerdos.html">Aviso de organización</a>
             </li>
           </ul>
         </div>
@@ -53,12 +53,12 @@
               <a href="tiendas.html">Tiendas</a>
             </li>
             <li>
-              <a href="acuerdoOrganizacion.html"
+              <a href="paginaacuerdos.html"
                 >Acuerdo de organización empresarial</a
               >
             </li>
             <li>
-              <a href="avisoOrganizacion.html">Aviso de organización</a>
+              <a href="paginaacuerdos.html">Aviso de organización</a>
             </li>
           </ul>
         </div>

@@ -862,3 +862,80 @@ footer .container .seccion-footer h3::before {
   border-radius: 3px;
   transition: all ease-in-out 0.2s;
 }
+
+/* ----------------------------------
+   Acuerdos
+------------------------------------ */
+
+.acuerdos-container {
+  margin: 20px 200px;
+}
+
+.acuerdos-title {
+  background-color: var(--text-title-color-logo);
+  padding-left: 50px;
+  margin: 60px 0% 20px 0%;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: Oswald;
+  font-size: 25px;
+  color: white;
+  border-radius: 3px;
+  transition: all ease-in-out 0.2s;
+}
+
+.acuerdos-paragraph {
+  padding: 20px 50px;
+  background-color: rgb(228, 228, 228);
+  font-family: Comfortaa;
+  font-weight: 900;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  transition: all ease-in-out 0.2s;
+}
+
+.acuerdos-paragraph h2 {
+  font-family: Oswald;
+  font-size: 22px;
+}
+
+.acuerdos-paragraph:last-of-type {
+  margin-bottom: 60px;
+}
+
+.acuerdos-paragraph-text {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .acuerdos-container {
+    margin: 0px 100px;
+  }
+  .acuerdos-title {
+    padding-left: 20px;
+  }
+  .acuerdos-paragraph {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .acuerdos-container {
+    margin: 0px 20px;
+  }
+}
+
+.acuerdos-paragraph:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 4px -1px;
+}
+
+.acuerdos-title:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 4px -1px black;
+}
