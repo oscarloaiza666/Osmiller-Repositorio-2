@@ -939,3 +939,96 @@ footer .container .seccion-footer h3::before {
   transform: scale(1.01);
   box-shadow: 1px 1px 4px -1px black;
 }
+
+/* ----------------------------------
+    EXHIBICIÓN DEL PRODUCTO
+------------------------------------ */
+
+.contenedor-producto-exhibido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgb(230, 230, 230);
+}
+
+.producto-exhbido-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.producto-exhbido-imagen img {
+  margin: 10%;
+  width: 80%;
+}
+
+.producto-exhibido-texto-contenedor {
+  font-family: "Oswald", sans-serif;
+  margin: 30px;
+}
+
+.producto-exhibido-texto-contenedor h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0px;
+}
+
+.producto-exhibido-texto-descripcion {
+  color: grey;
+  font-size: 20px;
+}
+
+.producto-exhibido-texto-contenedor2 {
+  margin-bottom: 16px;
+}
+
+.producto-exhibido-texto-precio1,
+.producto-exhibido-texto-precio2 {
+  display: inline;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--text-title-color-logo);
+}
+
+.producto-exhibido-texto-precio2 {
+  text-decoration: line-through;
+  font-size: 22px;
+  color: var(--text-title-color);
+  font-weight: 200;
+}
+
+.producto-exhibido-texto-id {
+  font-weight: 500;
+  color: rgb(97, 97, 97);
+  margin: 0px;
+}
+
+.btn-producto-exhibido {
+  font-size: 20px;
+  padding: 40px, 0px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.producto-exhibido-texto-descripcion {
+  font-family: Comfortaa;
+  font-size: 14px;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .producto-exhbido-imagen img {
+    margin: 0px;
+  }
+  .contenedor-producto-exhibido {
+    grid-template-columns: 1fr;
+  }
+  .producto-exhibido-texto-contenedor {
+    margin-bottom: 0px;
+  }
+  .producto-exhibido-texto-contenedor:last-of-type {
+    margin-top: 0px;
+  }
+}
