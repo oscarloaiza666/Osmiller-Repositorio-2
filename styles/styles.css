@@ -10,6 +10,11 @@ body {
   background-color: #fff;
 }
 
+.noscroll {
+  position: fixed;
+  overflow: hidden;
+}
+
 /* ----------------------------------  
    HEADER DEL HEADER
    ---------------------------------- */
@@ -24,7 +29,7 @@ body {
   justify-content: flex-end;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar.headerDelHeader {
     justify-content: center;
   }
@@ -33,7 +38,6 @@ body {
 .nav-link.headerDelHeader {
   color: black;
   font-size: 15px;
-  padding-bottom: 0px;
 }
 
 .nav-link.headerDelHeader:hover {
@@ -92,6 +96,7 @@ IMAGEN DE HEADER
   justify-content: center;
   transition: all ease-in-out 0.2s;
 }
+
 .nav-link {
   color: var(--text-title-color);
 }
@@ -128,25 +133,119 @@ IMAGEN DE HEADER
   border-color: var(--text-title-color-logo);
 }
 
+nav-mobile {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  z-index: 100;
+  align-items: center;
+}
+
+nav-mobile a {
+  width: 60px;
+  margin-left: 10%;
+  justify-content: end;
+}
+
+.mobile-nav-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mobile-nav-buttons .header-navbar-menu {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header-navbar-menu a {
+  margin: 0%;
+  width: 30px;
+}
+
+.hamburguer {
+  display: block;
+  width: 30px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  margin-right: 20px;
+}
+
+.hamburguer .bar,
+.hamburguer:after,
+.hamburguer:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(29, 29, 29);
+  margin: 3px 0px;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.hamburguer.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+  background-color: var(--text-title-color-logo);
+}
+
+.hamburguer.is-active:after {
+  transform: rotate(45deg) translate(-4px, -4px);
+  background-color: var(--text-title-color-logo);
+}
+
+.hamburguer.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 98;
+  background-color: var(--navbar-footer-color);
+  padding-top: 80px;
+  transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav .header-navbar-menu {
+  display: block;
+  text-align: center;
+}
+
+.mobile-nav a {
+  text-align: left;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 20px 10px;
+  padding-bottom: 12px 16px;
+  background-color: rgb(187, 187, 187);
+  border-radius: 4px;
+}
+
+.mobile-nav a:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 4px rgb(145, 145, 145);
+}
+
 @media (max-width: 768px) {
   .header-navbar-nav {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .header-navbar-img {
     display: none;
   }
-  .header-navbar-nav {
-    grid-gap: 0;
+  .header-navbar-img,
+  .headerLogo {
+    display: none;
   }
-  .header-navbar-derecha {
-    display: inherit;
-    padding-bottom: 4px;
-  }
-  .nav-link {
-    padding-bottom: 0px;
-  }
-  .form-control {
-    width: 18rem;
+  .headerDelHeader {
+    z-index: 120;
   }
 }
 
@@ -157,6 +256,11 @@ IMAGEN DE HEADER
   color: black;
   padding: 6px;
   font-size: 22px;
+  transition: all ease-in-out 0.2s;
+}
+
+.material-icons:hover {
+  color: var(--text-title-color-logo);
 }
 
 /* ----------------------------------  
