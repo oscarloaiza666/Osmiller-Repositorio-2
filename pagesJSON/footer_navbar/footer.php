@@ -14,6 +14,9 @@
             <li>
               <a href="tiendas.html">Tiendas</a>
             </li>
+            <li>
+              <a href="admin.html">Panel Administrador</a>
+            </li>
           </ul>
         </div>
         <div class="seccion-footer links-footer">
