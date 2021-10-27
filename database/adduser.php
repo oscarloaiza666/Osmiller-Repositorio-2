@@ -2,7 +2,7 @@
 session_start();
 
 //Open a new connection to the MySQL server
-$mysqli = new mysqli('localhost', 'root', 'root', 'osmiller');
+$mysqli = new mysqli('remotemysql.com', 'tTKa4lBkxo', 'A7sMUDGhft', 'tTKa4lBkxo');
 
 //Output any connection error
 if ($mysqli->connect_error) {
