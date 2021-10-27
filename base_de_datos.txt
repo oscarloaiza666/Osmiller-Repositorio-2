@@ -1,0 +1,19 @@
+Aquí va a ir la información de en donde se modifica la base de datos:
+
+--------------------------------------- INFORMACIÓN DE CONEXIÓN:
+Username: tTKa4lBkxo
+Database name: tTKa4lBkxo
+Password: A7sMUDGhft
+Server: remotemysql.com
+Port: 3306
+
+--------------------------------------- PÁGINA WEB:
+https://remotemysql.com
+
+--------------------------------------- PÁGINA WEB:
+https://webphpmyadmin.com
+
+--------------------------------------- CUENTA:
+est.oscar.loaiza@unimilitar.edu.co
+Osmiller123
+
