@@ -35,51 +35,54 @@
                       if (html == "true") {
                           $("#add_err2").html(
                               '<div class="alert alert-success"> \
-                              <strong>Account</strong> processed.  \
+                              <strong>El usuario se ha registrado correctamente.</strong> \
                               </div>'
                           );
                           window.location.href = "index.php";
                       } else if (html == "false") {
                           $("#add_err2").html(
                               '<div class="alert alert-danger"> \
-                              <strong>Email Address</strong> already in system.  \
+                              El <strong>email</strong> ingresado ya está registrado.  \
                               </div>'
                           );
                       } else if (html == "nombre") {
                           $("#add_err2").html(
                               '<div class="alert alert-danger"> \
-                              <strong>First Name</strong> is required.  \
+                              Un <strong>nombre</strong> es requerido.  \
                               </div>'
                           );
                       } else if (html == "eshort") {
                           $("#add_err2").html(
                               '<div class="alert alert-danger"> \
-                              <strong>Email Address</strong> is required.  \
+                              Un <strong>email</strong> es requerido.  \
                               </div>'
                           );
                       } else if (html == "eformat") {
                           $("#add_err2").html(
                               '<div class="alert alert-danger"> \
-                              <strong>Email Address</strong> format is not valid.  \
+                              El formato del <strong>email</strong> es inválido.  \
                               </div>'
                           );
                       } else if (html == "pshort") {
                           $("#add_err2").html(
                               '<div class="alert alert-danger"> \
-                              <strong>Password</strong> must be at least 4 characters .  \
+                              La <strong>contraseña</strong> debe ser de al menos 5 carácteres.  \
                               </div>'
                           );
                       } else {
                           $("#add_err2").html(
                               '<div class="alert alert-danger"> \
-                              <strong>Error</strong> processing request. Please try again.  \
+                              <strong>Error</strong> procesando la petición, intenta nuevamente o mas tarde.  \
                               </div>'
                           );
                       }
                   },
                   beforeSend: function () {
-                      $("#add_err2").html("loading...");
+                      $("#registrar").html("CARGANDO SOLICITUD...");
                   },
+                  complete: function (){
+                      $("#registrar").html("ÚNETE A NOSOTROS");
+                  }
               });
               return false;
           });

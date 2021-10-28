@@ -34,23 +34,26 @@
 						  if(html=='true')
 						  {							  
 							  $("#add_err2").html('<div class="alert alert-success"> \
-									<strong>Authenticated</strong> \ \
+									<strong>Has iniciado sesión correctamente.</strong> \ \
 									</div>');
 							window.location.href = "index.php";
 						  } else if (html=='false') {
 								$("#add_err2").html('<div class="alert alert-danger"> \
-									<strong>Authentication</strong> failure. \ \
+									<strong>Error</strong> de autenticación. \ \
 									</div>');
 						  } else {
 								$("#add_err2").html('<div class="alert alert-danger"> \
-									<strong>Error</strong> processing request. Please try again. \ \
+                  <strong>Error</strong> procesando la petición, intenta nuevamente o mas tarde.  \
 									</div>');
 						  }
 						},
 						beforeSend:function()
 						{
-              $("#add_err2").html("loading...");
-						}
+              $("#iniciarsesion").html("CARGANDO SOLICITUD...");
+						},
+             complete: function (){
+              $("#iniciarsesion").html("INICIAR SESIÓN");
+                  }
 					});
 					 return false;
 				});
@@ -139,7 +142,7 @@
           <p class="card-login-text">- Obten notificaciónes mensuales</p>
         </div>
         <div class="card-login-button">
-          <a href="signup.php"><button class="btn boton-signup btn-primary">
+          <a><button onclick="location.href='signup.php'" type="button" class="btn boton-signup btn-primary">
             ÚNETE A NOSOTROS
             </button>
           </a>
