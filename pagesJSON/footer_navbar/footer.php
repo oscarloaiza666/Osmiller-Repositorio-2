@@ -1,7 +1,7 @@
 <footer class="footer nuevo pt-4">
       <div class="container">
         <div class="seccion-footer seccion-image">
-          <a href="index.html">
+          <a href="https://osmiller.herokuapp.com/">
             <img src="img/logoOsmiller.png" alt="" />
           </a>
         </div>
@@ -14,9 +14,6 @@
             <li>
               <a href="tiendas.html">Tiendas</a>
             </li>
-            <li>
-              <a href="admin.html">Panel Administrador</a>
-            </li>
           </ul>
         </div>
         <div class="seccion-footer links-footer">
@@ -24,7 +21,8 @@
           <ul class="ul-footer-nuevo">
             <li>
               <a href="paginaacuerdos.html"
-                >Acuerdo de organización empresarial</a>
+                >Acuerdo de organización empresarial</a
+              >
             </li>
             <li>
               <a href="paginaaviso.html">Aviso de negociación</a>
@@ -36,7 +34,7 @@
         </div>
         <div class="seccion-footer">
           <h3>CONTACTO</h3>
-          <ul class="ul-footer-nuevo">
+          <ul class="iconos">
             <li>
               <a href="https://www.facebook.com" target="_blank"
                 ><i class="fab fa-facebook font-awesome-custom-2"></i

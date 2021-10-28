@@ -378,6 +378,59 @@ nav-mobile a {
   z-index: 4;
 }
 
+@media only screen and (max-width: 450px) {
+  .contenedor-imagenes {
+    width: 100%;
+    height: 1200px;
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor-div-imagenes{
+  height: 420px;
+}
+
+  .contenedor-imagenes-style {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+.borde-imagen {
+    width: 95.13%;
+    height: 340px;
+    border: 2.5 px solid #ffffff;
+    position: relative;
+    top: -694px;
+    left: 7px;
+    z-index: 2;
+  }
+  
+  .texto-imagen {
+    font-family: "Comfortaa", bold;
+    font-size: 35pt;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -755px;
+    left: 15px;
+    z-index: 3;
+    text-shadow: 1px 1px 5px black;
+}
+  
+  .contenedor-imagenes-aux {
+    width: 100%;
+    height: 350px;
+    border: 0px solid #ffffff;
+    position: relative;
+    top: -350px;
+    z-index: 4;
+  }
+}
+
 .contenedor-imagenes-aux:hover ~ .borde-imagen {
   transition: all ease-in-out 0.2s;
   background-color: #61171493;
@@ -520,6 +573,47 @@ footer .container .seccion-footer h3::before {
   }
 }
 
+.iconos {
+  margin-top: 20px;
+  display: inline-flex;
+  grid-gap: 10px;
+  padding: 0px;
+  line-height: 18px;
+}
+
+.iconos li {
+  list-style: none;
+}
+
+.iconos li a{
+  font-family: "Comfortaa", bold;
+  font-weight: 700;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all ease-in-out 0.2s;
+}
+
+.iconos li a i{
+  transition: all ease-in-out 0.2s;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 22px;
+}
+
+.iconos li a i:hover {
+  background-color: var(--text-title-color-logo);
+}
+
+.iconos li a i {
+  margin: auto;
+}
 /* ----------------------------------  
    BANNER OFERTAS
    ---------------------------------- */
@@ -735,6 +829,14 @@ footer .container .seccion-footer h3::before {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .contenedor-card-zapatos {
+    display: flex;
+    margin: 5px -30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 /* ----------------------------------  
    BANNER CATEGORÍAS
    ---------------------------------- */

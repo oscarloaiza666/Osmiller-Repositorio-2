@@ -62,7 +62,7 @@
 
     <!--  Contenedor de cartas con MUJERES, HOMBRE Y NIÑOS  -->
     <div class="contenedor-imagenes">
-      <div>
+      <div  class="contenedor-div-imagenes">
         <div>
           <img src="img/mujerca.png" class="contenedor-imagenes-style" />
         </div>
@@ -73,7 +73,7 @@
         <div class="borde-imagen"></div>
         <div class="texto-imagen">MUJER</div>
       </div>
-      <div>
+      <div  class="contenedor-div-imagenes">
         <div>
           <img src="img/hombreca.png" class="contenedor-imagenes-style" />
         </div>
@@ -84,7 +84,7 @@
         <div class="borde-imagen"></div>
         <div class="texto-imagen">HOMBRE</div>
       </div>
-      <div>
+      <div  class="contenedor-div-imagenes">
         <div>
           <img src="img/ninoca.png" class="contenedor-imagenes-style" />
         </div>
