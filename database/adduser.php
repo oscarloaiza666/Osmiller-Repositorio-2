@@ -1,10 +1,14 @@
 <?php
+// Iniciar o verificar una sesión
 session_start();
 
-//Open a new connection to the MySQL server
+// $VARIABLE = funciones, texto, etc.
+
+// Vamos a llamar a la base de datos.
+// $mysqli = new mysqli('servidor',      'usuario',   'contraseña', 'nombre de la base de datos');
 $mysqli = new mysqli('remotemysql.com', 'tTKa4lBkxo', 'A7sMUDGhft', 'tTKa4lBkxo');
 
-//Output any connection error
+// Si llega a suceder algún error, nos muestra en consola un mensaje.
 if ($mysqli->connect_error) {
     die('Error : (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
 }
