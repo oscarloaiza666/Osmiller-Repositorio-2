@@ -45,41 +45,4 @@
     </div>
 
     <!-- Barra de navegación -->
-    <header class="header-navbar">
-      <nav class="header-navbar-nav">
-        <div class="header-navbar-img">
-          <a href="index.html"
-            ><img src="img/logoOsmillerSinLetra.png" alt="HOME"
-          /></a>
-        </div>
-        <div>
-          <ul class="header-navbar-menu">
-            <li>
-              <a class="nav-link" href="categoriaMujeres.html">MUJERES</a>
-            </li>
-            <li>
-              <a class="nav-link" href="categoriaHombres.html">HOMBRES</a>
-            </li>
-            <li><a class="nav-link" href="categoriaNinos.html">NIÑOS</a></li>
-            <li>
-              <a class="nav-link ofertas" href="categoriaOfertas.html"
-                >OFERTAS</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="header-navbar-derecha">
-          <ul class="header-navbar-menu">
-            <a class="navbar-brand">
-              <input class="form-control" type="text" placeholder="Buscar" />
-            </a>
-            <a href="miCuenta.html"
-              ><i class="far fa-user material-icons"></i
-            ></a>
-            <a href="carritoCompras.html"
-              ><i class="fas fa-shopping-bag material-icons"></i
-            ></a>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <header class="header-navbar" id="navbar-id"></header>
