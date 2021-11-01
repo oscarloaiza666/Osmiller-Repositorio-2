@@ -1247,7 +1247,7 @@ footer .container .seccion-footer h3::before {
 
 .carro-compras-in {
   padding: 30px, 40px;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
   font-family: Oswald;
   font-size: 20px;
   color: rgb(37, 37, 37);
@@ -1310,16 +1310,19 @@ tr:hover td {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .card-carrito {
   transition: all ease-in-out 0.2s;
-  padding: 20px, 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 355px;
-  margin-right: 355px;
-  background-color: rgb(241, 241, 241);
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 330px;
+  margin-right: 330px;
+  margin-top: 1rem;
+  background-color: rgb(240, 240, 240);
   font-family: Oswald;
   font-size: 20px;
   color: rgb(37, 37, 37);
@@ -1332,31 +1335,22 @@ tr:hover td {
 
 .card-body1 {
   padding: 20px, 25px;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 25px;
+  margin-right: 25px;
   color: rgb(37, 37, 37);
   border-radius: 15px;
 }
 
 .contenedor-card-costo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1px;
-  margin-right: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .card-costo {
   transition: all ease-in-out 0.2s;
-  padding: 15px, 15px;
-  padding-left: 33px;
-  padding-right: 33px;
-  padding-bottom: 16px;
-  margin-left: 1px;
-  margin-right: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 12px;
   font-family: Oswald;
   font-size: 20px;
   font: center;
@@ -1371,36 +1365,29 @@ tr:hover td {
 .table2 {
   font-family: Oswald;
   font-size: 17px;
-  margin-left: 0px;
+  padding-bottom: 6px;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 1rem;
+  border-radius: 15px;
   width: 100%;
-  text-align: left;
-  border-collapse: collapse;
 }
 
 .btn1-bg {
-  background-color: var(--text-title-color-logo);
-  color: #fff;
-  padding: 2px 12px;
+  width: 190px;
+  padding: 2px;
   border-radius: 12px;
+  color: #fff;
+  background-color: var(--text-title-color-logo);
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
 }
 
 .btn1 {
   transition: all ease-in-out 0.2s;
 }
 
-.btn1:hover {
-  transform: scale(1.1);
-  background-color: rgb(76, 194, 52);
-  color: #fff;
-}
-
 .btn-link {
   color: var(--text-title-color-logo);
 }
 
-.btn1-bg {
-  background-color: var(--text-title-color-logo);
-  color: #fff;
-  padding: 2px 12px;
-  border-radius: 12px;
-}
