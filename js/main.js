@@ -10,7 +10,7 @@ window.onload = function () {
   const navbar_template = `
       <nav class="header-navbar-nav">
         <div class="header-navbar-img">
-          <a href="index.html"
+          <a href="https://osmiller.herokuapp.com/"
             ><img src="img/logoOsmillerSinLetra.png" alt="HOME"
           /></a>
         </div>
@@ -45,7 +45,7 @@ window.onload = function () {
         </div>
       </nav>
       <nav-mobile>
-        <a href="index.html"><img src="img/logoOsmiller.png" alt="HOME" /></a>
+        <a href="https://osmiller.herokuapp.com/"><img src="img/logoOsmiller.png" alt="HOME" /></a>
         <input class="form-control" type="text" placeholder="Buscar" />
         <div class="mobile-nav-buttons">
           <ul class="header-navbar-menu">
