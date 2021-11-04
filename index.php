@@ -23,6 +23,8 @@
     <!-- NORMALIZAMOS ESTILOS -->
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="styles/bannerofertasstyles.css" />
+    <!-- ESTILOS SLIDER -->
   </head>
 
   <!-- Comienza el cuerpo de la página -->
@@ -334,5 +336,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cargarProductos.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
