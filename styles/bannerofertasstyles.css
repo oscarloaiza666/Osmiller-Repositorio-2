@@ -85,3 +85,26 @@
 .fade:not(.show) {
   opacity: 1;
 }
+
+@media (max-width: 450px) {
+
+  .mobilecontainer{
+    padding-top: 45px;
+    /* Aumentamos la anchura y altura durante 2 segundos */
+    transition: width 1s, transform 1s;
+    transform : scale(1.8);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 3.6s ease;
+    margin-top: 15%;
+  }
+
+}

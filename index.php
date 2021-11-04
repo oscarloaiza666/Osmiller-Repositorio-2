@@ -40,16 +40,16 @@
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <div class="numbertext">1 / 2</div>
-  <img src="img/oferta1.png" style="width:100%">
-</div>
+ <!-- Full-width images with number and caption text -->
+ <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <div class="mobilecontainer"><img src="img/oferta1.png" style="width:100%"></div>
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 2</div>
-  <img src="img/oferta2.png" style="width:100%">
-</div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <div class="mobilecontainer"><img src="img/oferta2.png" style="width:100%"></div>
+  </div>
 
 <!-- Next and previous buttons -->
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
