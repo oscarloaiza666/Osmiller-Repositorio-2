@@ -33,25 +33,43 @@
 
     <!--  COMIENZA EL CONTENIDO DE LA PÁGINA WEB -->
 
-    <!-- Ofertas banner -->
-      <div class="contenedor-imagenes2">
-        <div>
-          <img src="img/ofertaca.png" class="imagenes2" />
-        </div>
-      <div
-      class="cuadro-ofertasaux"
-      onclick="location.href='categoriaOfertas.html'"></div>
-      <div class="cuadro-ofertas2"></div>
-      <div class="cuadro-ofertas">    
-        <div class="texto-ofertas2">HASTA</div>
-        <div class="texto-ofertas4">40%</div>
-        <div class="texto-ofertas3">de descuentos</div>
-        <div class="texto-ofertas1">Aprovecha los descuentos de mitad de temporada en productos seleccionados.<br />¡ Acumulable con otras promociones !
-        </div>
-      </div>
-    </div>
+  <!-- Ofertas banner -->
 
-    <div style="padding: 30px"></div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/oferta1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/oferta2.png" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/oferta3.png" style="width:100%">
+  
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+  <div style="padding: 30px"></div>
 
     <!--  ¿Cuál es tu estilo?  -->
     <div class="contenedor-text">
