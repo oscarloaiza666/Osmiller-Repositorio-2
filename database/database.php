@@ -1,12 +1,14 @@
 <?php
-    $server = "localhost";
-    $username = "root";
-    $password ="";
-    $database = "osmiller";
+    $server = "remotemysql.com";
+    $username = "tTKa4lBkxo";
+    $password ="A7sMUDGhft";
+    $database = "tTKa4lBkxo";
+    
+$conn = new mysqli($server,$username, $password,$database);
 
-    try{
-        $conn = new PDO("mysql:host=$server;dbname=$database;",$username, $password);
-    } catch (PDOException $e){
-        die("Conection failed: ".$e->getMessage())
-    }
+//Evaluar conexion
+if ($conn->connect_error)
+{
+   die("Conexion fallida: " .$conn->connect-error);
+}
 ?>

@@ -16,13 +16,22 @@ window.onload = function () {
         </div>
         <div>
           <ul class="header-navbar-menu">
-            <li>
+            <li> <?php
+                  $eleccion = '1';
+                  ?>
               <a class="nav-link" href="categoriaMujeres.html">MUJERES</a>
             </li>
             <li>
+                  <?php
+                  $eleccion = '2';
+                  ?>
               <a class="nav-link" href="categoriaHombres.html">HOMBRES</a>
             </li>
-            <li><a class="nav-link" href="categoriaNinos.html">NIÑOS</a></li>
+            <li>
+                  <?php
+                  $eleccion = '3';
+                  ?>
+            <a class="nav-link" href="categoriaNinos.html">NIÑOS</a></li>
             <li>
               <a class="nav-link ofertas" href="categoriaOfertas.html"
                 >OFERTAS</a

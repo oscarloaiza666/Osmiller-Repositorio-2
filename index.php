@@ -27,19 +27,13 @@
     <!-- ESTILOS SLIDER -->
   </head>
 
-  <!-- Comienza el cuerpo de la página -->
-
   <body>
     <!-- Incluimos el navbar -->
     <?php require_once 'pagesJSON/footer_navbar/nav.php';?>
-
     <!--  COMIENZA EL CONTENIDO DE LA PÁGINA WEB -->
-
-  <!-- Ofertas banner -->
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
-
  <!-- Full-width images with number and caption text -->
  <div class="mySlides fade">
     <div class="numbertext">1 / 2</div>
@@ -115,203 +109,15 @@
         <h3 class="contenedor-text-style">Novedades</h3>
       </div>
     </div>
+    
     <!--
     <div style="padding: 60px"></div>
--->
+    -->
 
     <section class="contenedor-card-zapatos">
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="#" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+          <?php
+          require 'pagesJSON/tablaDeProductos.php';
+          ?>
     </section>
 
     <div style="padding: 60px"></div>
@@ -327,7 +133,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/cargarProductos.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/cargarProductos.js"></script>
   </body>
 </html>
