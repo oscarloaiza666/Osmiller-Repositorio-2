@@ -37,7 +37,7 @@
       COMIENZA EL CONTENIDO DE LA PÁGINA WEB 
     -->
 
-    <!-- Banner categoría mujer -->
+    <!-- Banner categoría género -->
     <?php require 'pagesJSON/categoriasController.php';?>
 
     <!-- Cartas de zapatos -->

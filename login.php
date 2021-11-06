@@ -69,7 +69,7 @@
 
     <!---------------------------------------------
       COMIENZA EL CONTENIDO DE LA PÁGINA WEB 
-  ---------------------------------------------->
+      ---------------------------------------------->
     <div style="padding: 60px"></div>
 
     <div class="contenedor-card-login">
