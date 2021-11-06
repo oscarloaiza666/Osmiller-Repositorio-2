@@ -1,10 +1,14 @@
 <?php
-require 'database/database.php'
+require 'database/database.php';
 ?>
 <?php 
 session_start(); 
 
-$numero = '0';
+if (isset($idCategoria)){
+} else {
+  $numero = '0';
+};
+
 if ($numero == '0'){
 $query= mysqli_query($conn,"SELECT * FROM `Articulo`");
 } else{
@@ -43,9 +47,7 @@ if($result>0) //Recorro el arreglo de resultado
 else 
 {
   ?>
-   <div class=tabla>
-      <h2 class="text-light"> INVENTARIO VACIO</h2>
-</div>
+    <h1>PÁGINA NO ENCONTRADA</h1>
   <?php
 }
 ?>
