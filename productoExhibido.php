@@ -86,77 +86,12 @@
     </section>
     <?php
     } else {
-      echo 'PUTA MADRE';
-      echo $result;
+      echo 'ERROR';
     }  
     ?>
-   
-
+     
     <section class="contenedor-card-zapatos">
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="productoExhibido.html" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="productoExhibido.html" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="productoExhibido.html" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card m-3">
-        <img src="img/zapato1.png" class="card-img-top" />
-        <div class="card-body">
-          <h3 class="card-title">Nombre zapato</h3>
-          <p class="card-text m-0">Descripción del producto</p>
-          <p class="card-text"><strong> ID. Producto: #121212</strong></p>
-          <div class="row">
-            <ul class="nav">
-              <li class="col card-precio">$100.000</li>
-              <li class="col card-precio">
-                <a href="productoExhibido.html" class="btn btn-bg">COMPRAR</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <?php include 'pagesJSON/tablaDeProductos.php'?>
     </section>
 
     <!-- 
