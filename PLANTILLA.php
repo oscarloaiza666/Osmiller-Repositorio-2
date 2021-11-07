@@ -34,6 +34,10 @@
       <strong>PLANTILLA NO BORRAR</strong>
     </h1>
 
+    <?php
+    var_dump($nombre);
+    ?>
+
     <!-- 
       TERMINA EL CONTENIDO DE LA PÁGINA WEB 
     ------------------------------------------------>

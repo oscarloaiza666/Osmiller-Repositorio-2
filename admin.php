@@ -121,48 +121,25 @@
                 </div>
 
                 <div class="row my-5">
-                    <h3 class="fas fa-shopping-cart me-2 fs-4 mb-3">Ordenes hoy</h3>
+                    <h3 class="fas fa-shopping-cart me-2 fs-4 mb-3">Lista de productos</h3>
                     <div class="col">
                         <table class="table bg-white rounded shadow-sm  table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="50">#</th>
-                                    <th scope="col">Producto</th>
+                                    <th scope="col">ID. Producto</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
                                     <th scope="col">Categoria</th>
-                                    <th scope="col">Precio</th>
+                                    <th scope="col">Precio de venta</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Descripcion</th>
+                                    <th scope="col">ADMINISTRAR
+                                        <a href="adminAgregarProducto.php">AGREGAR</a>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>zapato 1</td>
-                                    <td>mujer</td>
-                                    <td>$90.000</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>zapato 2</td>
-                                    <td>hombre</td>
-                                    <td>$60.000</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>zapato 3</td>
-                                    <td>niño</td>
-                                    <td>$40.000</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>zapato 4</td>
-                                    <td>mujer</td>
-                                    <td>$80.000</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>zapato 5</td>
-                                    <td>hombre</td>
-                                    <td>$50.000</td>
-                                </tr>
+                                <?php include 'pagesJSON/tablaDeProductosAdmin.php'; ?>
                             </tbody>
                         </table>
                     </div>
