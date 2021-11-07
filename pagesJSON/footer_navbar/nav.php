@@ -24,14 +24,14 @@
           <li class="nav-item">
             <a
               class="nav-link headerDelHeader cursor-link-clicker"
-              href="quienesSomos.html"
+              href="quienesSomos.php"
               >Quienes somos</a
             >
           </li>
           <li class="nav-item">
             <a
               class="nav-link headerDelHeader cursor-link-clicker"
-              href="ayuda.html"
+              href="ayuda.php"
               >Ayuda</a
             >
           </li>
@@ -72,7 +72,7 @@
             <a class="navbar-brand">
               <input class="form-control" type="text" placeholder="Buscar" />
             </a>
-            <a href="miCuenta.html"
+            <a href="miCuenta.php"
               ><i class="far fa-user material-icons"></i
             ></a>
             <a href="carritoCompras.php"
@@ -86,10 +86,10 @@
         <input class="form-control" type="text" placeholder="Buscar" />
         <div class="mobile-nav-buttons">
           <ul class="header-navbar-menu">
-            <a class="nav-buttons" href="miCuenta.html"
+            <a class="nav-buttons" href="miCuenta.php"
               ><i class="far fa-user material-icons"></i
             ></a>
-            <a class="nav-buttons" href="carritoCompras.html"
+            <a class="nav-buttons" href="carritoCompras.php"
               ><i class="fas fa-shopping-bag material-icons"></i
             ></a>
           </ul>
@@ -112,15 +112,15 @@
               <a class="nav-link ofertas" href="productosPorCategoria.php?idCategoria=<?php echo '0'?>">OFERTAS</a>
             </li>
             <hr />
-            <li><a class="nav-link" href="miCuenta.html">Mi cuenta</a></li>
+            <li><a class="nav-link" href="miCuenta.php">Mi cuenta</a></li>
             <li>
               <a class="nav-link" href="carritoCompras.php"
                 >Carrito de compras</a
               >
             </li>
-            <li><a class="nav-link" href="ayuda.html">Ayuda</a></li>
+            <li><a class="nav-link" href="ayuda.php">Ayuda</a></li>
             <li>
-              <a class="nav-link" href="quienesSomos.html"
+              <a class="nav-link" href="quienesSomos.php"
                 >Términos y condiciones</a
               >
             </li>
