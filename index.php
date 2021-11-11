@@ -99,7 +99,7 @@
           onclick="location.href='categoriaNinos.html'"
         ></div>
         <div class="borde-imagen"></div>
-        <div class="texto-imagen">NIÑO</div>
+        <div class="texto-imagen">NIÑOS</div>
       </div>
     </div>
     <div style="padding: 60px"></div>
